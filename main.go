@@ -69,18 +69,19 @@ func unmarshal(item string) (*Review, error) {
 
 // Write stars and review text on a CSV file
 func writeOut(review []*Review) error {
-	file, err := os.Create("data/yelp_academic_dataset_review.csv")
+	file, err := os.Create("data/yelp_academic_dataset_review.tsv")
 	if err != nil {
 		return err
 	}
 	defer file.Close()
 
 	w := bufio.NewWriter(file)
-	fmt.Fprint(w, "star,review\n")
+	fmt.Fprint(w, "star\treview\n")
 
 	for _, r := range review {
 		text := removeNewlines(r.Text)
-		fmt.Fprintf(w, "%d,%s\n", r.Stars, text)
+		text = removeTabs(text)
+		fmt.Fprintf(w, "%d\t%s\n", r.Stars, text)
 	}
 	return nil
 }
@@ -88,4 +89,9 @@ func writeOut(review []*Review) error {
 // Remove newlines from review text
 func removeNewlines(text string) string {
 	return strings.Replace(text, "\n", " ", -1)
+}
+
+// Remove tabs from review text
+func removeTabs(text string) string {
+	return strings.Replace(text, "\t", " ", -1)
 }
