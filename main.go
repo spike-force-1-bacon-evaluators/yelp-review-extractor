@@ -81,7 +81,8 @@ func writeOut(review []*Review) error {
 	for _, r := range review {
 		text := removeNewlines(r.Text)
 		text = removeTabs(text)
-		fmt.Fprintf(w, "%d\t%s\n", r.Stars, text)
+		star := normaliseStars(r.Stars)
+		fmt.Fprintf(w, "%d\t%s\n", star, text)
 	}
 	return nil
 }
@@ -94,4 +95,12 @@ func removeNewlines(text string) string {
 // Remove tabs from review text
 func removeTabs(text string) string {
 	return strings.Replace(text, "\t", " ", -1)
+}
+
+// Normalise stars for binary values
+func normaliseStars(star int) int {
+	if star > 3 {
+		return 1
+	}
+	return 0
 }
