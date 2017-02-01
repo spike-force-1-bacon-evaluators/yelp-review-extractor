@@ -82,7 +82,7 @@ func writeOut(review []*Review) error {
 		text := removeNewlines(r.Text)
 		text = removeTabs(text)
 		star := normaliseStars(r.Stars)
-		fmt.Fprintf(w, "%d\t%s\n", star, text)
+		fmt.Fprintf(w, "%d\t%s\n", star, strings.ToLower(text))
 	}
 	return nil
 }
