@@ -1,0 +1,22 @@
+---
+sudo: false
+
+services:
+  - docker
+
+language: go
+
+go:
+  - 1.7.4
+
+before_install:
+  - docker build -t yelp-review-extractor -f resources/Dockerfile .
+
+script:
+  - docker run yelp-review-extractor
+
+notifications:
+  on_success: always
+  email: false
+  slack: sf1-bacon:fXNEjRShCTHmorluLIpRPqGa
+...
