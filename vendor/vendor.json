@@ -15,6 +15,12 @@
 			"revisionTime": "2017-02-02T00:53:06Z"
 		},
 		{
+			"checksumSHA1": "nX3JCtBdyQZsJu+jBuiMn3U/ilA=",
+			"path": "github.com/bacon/yelp-review-extractor/src",
+			"revision": "bd66d5c90ada4dd351949c0f8911f2f1af8fd179",
+			"revisionTime": "2017-02-02T00:52:20Z"
+		},
+		{
 			"checksumSHA1": "RGnU1Mc16Cr1H4R4ZUX9CYFb9lk=",
 			"path": "github.com/briandowns/spinner",
 			"revision": "2c70630b7d7509ebda5365704ee6bb25e69b64ec",
@@ -45,5 +51,5 @@
 			"revisionTime": "2016-11-10T11:58:56Z"
 		}
 	],
-	"rootPath": "github.com/bacon/parser"
+	"rootPath": "github.com/bacon/yelp-review-extractor"
 }
