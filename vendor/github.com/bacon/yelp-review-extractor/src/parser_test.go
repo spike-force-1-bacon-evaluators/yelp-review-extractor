@@ -60,7 +60,7 @@ func TestWriteOut(t *testing.T) {
 		t.Error(err)
 	}
 
-	expected := []string{"star	review", "0	foo", "0	bar", "0	foobar"}
+	expected := []string{"star	review", "0	foo", "0	bar", "1	foobar"}
 
 	scanner := bufio.NewScanner(file)
 	for i := 0; scanner.Scan(); i++ {

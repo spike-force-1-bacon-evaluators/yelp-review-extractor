@@ -15,10 +15,16 @@
 			"revisionTime": "2017-02-02T00:53:06Z"
 		},
 		{
-			"checksumSHA1": "nX3JCtBdyQZsJu+jBuiMn3U/ilA=",
+			"checksumSHA1": "q5zPcrT/ZIMbh52WlmSq2aXGrUw=",
+			"path": "github.com/bacon/yelp-review-extractor",
+			"revision": "c7ac05026eacfa5b9ef9f477e7374e907e33b450",
+			"revisionTime": "2017-02-06T14:56:44Z"
+		},
+		{
+			"checksumSHA1": "llFkvCpHt4WL35HvdPDnAqy5me4=",
 			"path": "github.com/bacon/yelp-review-extractor/src",
-			"revision": "bd66d5c90ada4dd351949c0f8911f2f1af8fd179",
-			"revisionTime": "2017-02-02T00:52:20Z"
+			"revision": "c7ac05026eacfa5b9ef9f477e7374e907e33b450",
+			"revisionTime": "2017-02-06T14:56:44Z"
 		},
 		{
 			"checksumSHA1": "RGnU1Mc16Cr1H4R4ZUX9CYFb9lk=",

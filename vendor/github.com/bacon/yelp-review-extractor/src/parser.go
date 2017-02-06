@@ -145,7 +145,7 @@ func removeTabs(text string) string {
 
 // Normalise stars for binary values
 func normaliseStars(star int) int {
-	if star > 3 {
+	if star >= 3 {
 		return 1
 	}
 	return 0
