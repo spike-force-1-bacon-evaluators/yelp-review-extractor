@@ -1,4 +1,4 @@
-# YELP Review Parser [![Build Status](https://travis-ci.org/spike-force-1-bacon-evaluators/yelp-review-extractor.svg?branch=master)](https://travis-ci.org/spike-force-1-bacon-evaluators/yelp-review-extractor)
+# YELP Review Parser [![Build Status](http://178.62.93.118:8080/job/yelp-review-extractor/badge/icon)](http://178.62.93.118:8080/job/yelp-review-extractor/)
 
 ### How to:
 
